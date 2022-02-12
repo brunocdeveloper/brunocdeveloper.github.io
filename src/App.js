@@ -1,11 +1,15 @@
+import { BodyPage, GlobalStyle } from "./styled-components/home/body/style";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      Iniciando projeto
+    <BodyPage>
+      <GlobalStyle/>
+      <header>
+        Iniciando projeto
       </header>
-    </div>
+    </BodyPage>
   );
 }
 
 export default App;
+ 
