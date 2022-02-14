@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const NavbarStyle = styled.div`
+  background-color: black;
+  position: fixed;
   width: 100%;
-  background-color: blue;
+  z-index: 1;
 `;
 
 export {

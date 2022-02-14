@@ -5,7 +5,6 @@ const PresentationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 950px;
-  background-color: pink;
 `;
 
 const ContainerText = styled.div`
