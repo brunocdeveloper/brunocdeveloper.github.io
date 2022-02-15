@@ -1,11 +1,9 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ContainerProjects = styled.div`
   width: 1440px;
   height: 850px;
-  border-style: dashed;
-  border-color: red;
+
 `;
 
 const ContainerCompleteCarousel = styled.div`
@@ -16,8 +14,9 @@ const ContainerCompleteCarousel = styled.div`
 `;
 
 const TitleSectionProjects = styled.h1`
+  padding-top: 140px;
   text-align: center;
-  margin: 140px 0 0 30%;
+  margin: 0 0 0 30%;
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${props => props.weight ? props.weight : 'normal' };
@@ -35,6 +34,14 @@ const ContainerCarousel = styled.div`
   height: 577px;
   padding: 15px;
   border-radius: 5px;
+
+  @keyframes testeBg {
+    from { background-color: red; }
+    to { background-color: green; }
+  }
+
+  animation-name: testeBg,
+  animation-duration: 3s,
 
   transition: 1s;
 `;
