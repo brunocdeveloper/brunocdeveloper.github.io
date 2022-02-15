@@ -2,6 +2,7 @@ import ContainerHomePage from "./ContainerHomePage";
 import { BodyPage, GlobalStyle } from "../../styled-components/home/body/style";
 import Technologies from "./technologies";
 import SoftSkills from "./soft-skilss";
+import AgileMethods from "./agileMethodologies";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <ContainerHomePage/>
       <Technologies/>
       <SoftSkills/>
+      <AgileMethods/>
     </BodyPage> 
   )
 }
