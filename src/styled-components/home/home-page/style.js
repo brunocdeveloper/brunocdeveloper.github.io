@@ -25,16 +25,20 @@ const PresentationText = styled.p`
   width: 580px;
 `;
 
-
 const PresentationImage = styled.img`
   margin-left: -457px;
   z-index: 0;
 `;
+
+const StyleGreenWithText = styled.span`
+  color: #00E493;
+`
 
 
 export { 
   PresentationContainer,
   ContainerText,
   PresentationImage,
-  PresentationText
+  PresentationText,
+  StyleGreenWithText
 }

@@ -3,7 +3,8 @@ import logo from '../images/logo.png';
 import { PresentationContainer,
    PresentationImage,
    ContainerText, 
-   PresentationText} from '../styled-components/home/home-page/style';
+   PresentationText,
+   StyleGreenWithText} from '../styled-components/home/home-page/style';
 import NavBar from './navbar';
 
 function ContainerHomePage() {
@@ -14,7 +15,9 @@ function ContainerHomePage() {
         <ContainerText>
           <PresentationText>Bem vindo!</PresentationText>
           <PresentationText weight="700" size="52px">Eu sou Bruno Cândido</PresentationText>
-          <PresentationText>Desenvolvedor junior web <br/>full-stack</PresentationText>
+          <PresentationText>Desenvolvedor junior web <br/>
+            <StyleGreenWithText>full-stack</StyleGreenWithText>
+          </PresentationText>
         </ContainerText>
         <PresentationImage src={logo} alt='vector of a programmer'></PresentationImage>
       </PresentationContainer>
