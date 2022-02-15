@@ -11,6 +11,8 @@ const NavbarStyle = styled.div`
   height: 80px;
   padding: 0 50px;
   z-index: 2;
+
+  transition: background-color 0.5s;
 `;
 
 const LogoName = styled.span`

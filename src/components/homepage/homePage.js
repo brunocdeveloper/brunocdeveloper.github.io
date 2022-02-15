@@ -1,5 +1,5 @@
 import ContainerHomePage from "./ContainerHomePage";
-import { BodyPage, GlobalStyle } from "../styled-components/home/body/style";
+import { BodyPage, GlobalStyle } from "../../styled-components/home/body/style";
 
 function HomePage() {
   return (
