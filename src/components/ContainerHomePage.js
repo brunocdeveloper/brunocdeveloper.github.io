@@ -5,13 +5,11 @@ import { PresentationContainer,
    ContainerText, 
    PresentationText} from '../styled-components/home/home-page/style';
 import NavBar from './navbar';
-  
-
 
 function ContainerHomePage() {
   return (
     <>
-      <NavBar/>
+     <NavBar/>
       <PresentationContainer>
         <ContainerText>
           <PresentationText>Bem vindo!</PresentationText>

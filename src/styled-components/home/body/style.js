@@ -2,11 +2,15 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * { 
+    @import url('https://font.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+    @import url("@fontsource/saira-stencil-one");
     @import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
 `;
 
 const BodyPage = styled.div`
