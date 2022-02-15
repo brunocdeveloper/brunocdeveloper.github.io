@@ -12,6 +12,12 @@ const GlobalStyle = createGlobalStyle`
   
   }
 
+  @keyframe testebgcolor {
+    from { background-color: red; }
+    to { background-color: green; }
+  }
+
+
   html {
     background-color: black;
   }
