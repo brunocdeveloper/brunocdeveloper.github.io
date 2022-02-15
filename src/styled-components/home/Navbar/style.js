@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavbarStyle = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: ${props => props.bgcolor ? props.bgcolor : '' };
   align-items: center;
-  background-color: pink;
   position: fixed;
   width: 1440px;
   height: 80px;
@@ -22,10 +23,42 @@ const LogoName = styled.span`
   letter-spacing: 0.03em;
 
   color: #11DC94;
-
 `
+
+const StyledLink = styled(Link)`
+  font-family: Pragati Narrow;
+  margin-right: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 30px;
+
+  color: #FBFAFF;
+  text-decoration: none;
+`;
+
+const ButtonContato = styled.button`
+  width: 145px;
+  height: 43px;
+  background-color: #26BCBF;
+  border-radius: 19px;
+  text-decoration: none;
+  border: none;
+
+  font-family: Pragati Narrow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 30px;
+
+  color: #FBFAFF;
+  text-decoration: none;
+`
+
 
 export {
   NavbarStyle,
   LogoName,
+  StyledLink,
+  ButtonContato,
 }

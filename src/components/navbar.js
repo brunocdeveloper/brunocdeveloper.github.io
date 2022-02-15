@@ -1,14 +1,29 @@
-import React from 'react';
-import { LogoName, NavbarStyle } from '../styled-components/home/Navbar/style';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ButtonContato, LogoName, NavbarStyle, StyledLink } from '../styled-components/home/Navbar/style';
 
 function NavBar() {
+  const history = useNavigate();
+  const [colorNavBar, setColorNavBar] = useState("");
+
+  (() => {
+    window.addEventListener('scroll', () => {
+      console.log(colorNavBar)
+      if (window.scrollY > 84) {
+        setColorNavBar("#312D45");
+      } else {
+        setColorNavBar("");
+      }
+    })
+  })();
+
   return (
-    <NavbarStyle>
+    <NavbarStyle bgcolor={colorNavBar}>
       <LogoName>BC</LogoName>
       <div>
-        <button>teste</button>
-        <button>teste</button>
-        <button>teset</button>
+        <StyledLink to="/projetos">Projetos</StyledLink>
+        <StyledLink to="/sobre">Sobre Mim</StyledLink>
+        <ButtonContato onClick={ () => history("/contato") }>Contate</ButtonContato>
       </div>
     </NavbarStyle>
   )
