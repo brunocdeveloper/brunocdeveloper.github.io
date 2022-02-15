@@ -15,7 +15,7 @@ const ContainerText = styled.div`
 `;
 
 const PresentationText = styled.p`
-  font-family: 'Share', sans-serif !important;
+  font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${props => props.weight ? props.weight : 'normal' };
   font-size: ${props => props.size ? props.size : "40px" };

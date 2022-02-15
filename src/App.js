@@ -1,12 +1,15 @@
-import ContainerHomePage from "./components/homepage";
-import { BodyPage, GlobalStyle } from "./styled-components/home/body/style";
+import React from 'react';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import HomePage from './components/homePage';
+
 
 function App() {
   return (
-    <BodyPage>
-      <GlobalStyle/>
-      <ContainerHomePage></ContainerHomePage>
-    </BodyPage>
+    <Router>
+      <Routes>
+          <Route exact path="/" element={ <HomePage/>} />
+      </Routes>
+    </Router>
   );
 }
 
