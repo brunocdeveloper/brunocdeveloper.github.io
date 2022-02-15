@@ -10,7 +10,7 @@ const NavbarStyle = styled.div`
   width: 1440px;
   height: 80px;
   padding: 0 50px;
-  z-index: 1;
+  z-index: 2;
 `;
 
 const LogoName = styled.span`
