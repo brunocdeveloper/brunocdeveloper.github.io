@@ -3,13 +3,21 @@ import styled from 'styled-components';
 
 const ContainerProjects = styled.div`
   width: 1440px;
-  height: 815px;
+  height: 850px;
   border-style: dashed;
   border-color: red;
 `;
 
+const ContainerCompleteCarousel = styled.div`
+  width: 1440;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+`;
+
 const TitleSectionProjects = styled.h1`
-  margin: 150px 0 0 50px;
+  text-align: center;
+  margin: 140px 0 0 30%;
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${props => props.weight ? props.weight : 'normal' };
@@ -21,16 +29,20 @@ const TitleSectionProjects = styled.h1`
 `;
 
 const ContainerCarousel = styled.div`
-display: flex;
-
+  display: flex;
   background-color: #666086;
-  margin: 15px 0 0 50px;
   width: 1272px;
   height: 577px;
   padding: 15px;
+  border-radius: 5px;
+
+  transition: 1s;
 `;
 
 const ContainerInfoProjects = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 623px;
   height: 536px;
   margin-left: 46px;
@@ -45,7 +57,7 @@ const TitleProject = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 38px;
   line-height: 125.2%;
 
   letter-spacing: -0.005em;
@@ -54,11 +66,11 @@ const TitleProject = styled.p`
 `
 
 const TextAboutProject = styled.p`
-  margin-top: 18px;
+  margin-top: 10px;
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 125.2%;
 
   letter-spacing: -0.005em;
@@ -67,12 +79,11 @@ const TextAboutProject = styled.p`
 `;
 
 const TechsUsed = styled.p`
-  margin-top: 130px;
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 125.2%;
+  font-size: 36px;
+  margin-top: 15px;
 
   letter-spacing: -0.005em;
 
@@ -86,13 +97,43 @@ const ButtonGitHub = styled.a`
   font-size: 36px;
   line-height: 125.2%;
   text-decoration: none;
-  margin-top: 45px;
-  text-align: end;
-  display: block;
   letter-spacing: -0.005em;
-
   color: #00E493;
+  align-self: flex-end;
 `
+
+const LeftButton = styled.img`
+  width: 68px;
+  height: 101px;
+  align-self: center;
+  border-radius: 5px;
+  pointer-events: ${ props => props.disable ? props.disable : 'true' };
+  opacity: ${props => props.opacity ? props.opacity : 1 };
+
+  :hover {
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  transition: border-radius 0.5s;
+`;
+
+const RightButton = styled.img`
+  width: 68px;
+  height: 101px;
+  align-self: center;
+  border-radius: 5px;
+  pointer-events: ${ props => props.disable ? props.disable : 'true' };
+  opacity: ${props => props.opacity ? props.opacity : 1 };
+
+  :hover {
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  transition: border-radius 0.5s;
+`;
+
 
 export { 
   ContainerProjects,
@@ -103,6 +144,10 @@ export {
   ContainerInfoProjects,
   TextAboutProject,
   TechsUsed,
-  ButtonGitHub
+  ButtonGitHub,
+  ContainerCompleteCarousel,
+  LeftButton,
+  RightButton
 }
+
 
