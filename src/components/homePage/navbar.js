@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ButtonContato, LogoName, NavbarStyle, StyledLink } from '../../styled-components/home/Navbar/style';
 
-function NavBar() {
+function NavBar(props) {
+  const bgcolorProjects = props.bgcolor;
+  const { pathname } = useLocation();
   const history = useNavigate();
   const [colorNavBar, setColorNavBar] = useState("");
 
@@ -17,8 +19,8 @@ function NavBar() {
   })();
 
   return (
-    <NavbarStyle bgcolor={colorNavBar}>
-      <LogoName>BC</LogoName>
+    <NavbarStyle bgcolor={ pathname !== "/" ?  bgcolorProjects :colorNavBar  }>
+      <LogoName onClick={ () => history("/") }>BC</LogoName>
       <div>
         <StyledLink to="/projetos">Projetos</StyledLink>
         <StyledLink to="/sobre">Sobre Mim</StyledLink>

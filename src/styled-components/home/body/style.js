@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
 const BodyPage = styled.div`
   background-color: #3F3B51;
-  height: 3783px;
+  height: ${props => props.height ? props.height : "3783px"};
   margin: 0 auto;
   width: 1440px;
 `

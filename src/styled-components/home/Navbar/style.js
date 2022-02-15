@@ -25,6 +25,10 @@ const LogoName = styled.span`
   letter-spacing: 0.03em;
 
   color: #11DC94;
+
+  :hover {
+    cursor: pointer;
+  }
 `
 
 const StyledLink = styled(Link)`
