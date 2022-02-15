@@ -14,8 +14,7 @@ const TitleSection = styled.p`
 
 const TechnologieSection = styled.section`
   display: flex;
-  margin-left: 50px;
-  margin-top: 94px;
+  margin: 94px 0 76px 50px; 
 `;
 
 const TechText = styled.div`
@@ -32,7 +31,6 @@ const TechText = styled.div`
 
 const TechImage = styled.img`
 `;
-
 
 export { 
   TitleSection,
