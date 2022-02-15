@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ButtonContato, LogoName, NavbarStyle, StyledLink } from '../styled-components/home/Navbar/style';
+import { ButtonContato, LogoName, NavbarStyle, StyledLink } from '../../styled-components/home/Navbar/style';
 
 function NavBar() {
   const history = useNavigate();
@@ -8,7 +8,6 @@ function NavBar() {
 
   (() => {
     window.addEventListener('scroll', () => {
-      console.log(colorNavBar)
       if (window.scrollY > 84) {
         setColorNavBar("#312D45");
       } else {

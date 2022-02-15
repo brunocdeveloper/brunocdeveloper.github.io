@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from './images/logo.png';
 import { PresentationContainer,
    PresentationImage,
    ContainerText, 
    PresentationText,
-   StyleGreenWithText} from '../styled-components/home/home-page/style';
+   StyleGreenWithText} from '../../styled-components/home/home-page/style';
 import NavBar from './navbar';
 
 function ContainerHomePage() {
