@@ -1,4 +1,4 @@
-import ContainerHomePage from "./ContainerHomePage";
+import ContainerHomePage from "./containerHomePage";
 import { BodyPage, GlobalStyle } from "../../styled-components/home/body/style";
 import Technologies from "./technologies";
 import SoftSkills from "./soft-skilss";
