@@ -32,7 +32,7 @@ const LogoName = styled.span`
 `
 
 const StyledLink = styled(Link)`
-  font-family: Pragati Narrow;
+  font-family: 'Pragati Narrow';
   margin-right: 36px;
   font-style: normal;
   font-weight: bold;
