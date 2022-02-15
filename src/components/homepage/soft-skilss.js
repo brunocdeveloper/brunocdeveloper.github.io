@@ -13,6 +13,7 @@ function SoftSkills() {
         <StyleGreenWithText> soft-skills </StyleGreenWithText>
         a fim de desenvolvermos as principais habilidades requisitadas para
         a carreira de Desenvolvimento Web.
+      </SoftSkillsTex>
         <ContainerCards>
           <CardSoftSkills>
             <TitleCard>Inteligência Emocional</TitleCard>
@@ -69,7 +70,6 @@ function SoftSkills() {
             </TextCard>
           </CardSoftSkills>
         </ContainerCards>
-      </SoftSkillsTex>
     </div>
   )
 }

@@ -14,8 +14,8 @@ const SoftSkillsTex = styled.p`
 `;
 
 const ContainerCards = styled.div`
-  width: 1400px;
-  margin-top: 50px;
+  width: 1380px;
+  margin: 50px 0 190px 61px;
   display: flex;
   flex-wrap: wrap;
 `;
