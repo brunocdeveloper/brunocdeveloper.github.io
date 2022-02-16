@@ -51,7 +51,7 @@ const ButtonContato = styled.button`
   text-decoration: none;
   border: none;
 
-  font-family: Pragati Narrow;
+  font-family: 'Pragati Narrow';
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -59,6 +59,11 @@ const ButtonContato = styled.button`
 
   color: #FBFAFF;
   text-decoration: none;
+
+  :focus {
+    box-shadow: none;
+    outline: 0;
+  }
 `
 
 

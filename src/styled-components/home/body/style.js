@@ -9,20 +9,15 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
   }
-
-  @keyframe testebgcolor {
-    from { background-color: red; }
-    to { background-color: green; }
-  }
-
 
   html {
     background-color: black;
   }
 
 `;
+
+
 
 const BodyPage = styled.div`
   background-color: #3F3B51;
