@@ -3,12 +3,22 @@ import styled from 'styled-components';
 const ContainerProjects = styled.div`
   width: 1440px;
   height: 850px;
+`;
 
+const CardsAnButtonsCarousel = styled.div`
+  display: flex;
+  margin: 0 8px;
+`;
+
+const CardCarousel = styled.div`
+  width: 1272px;
+  display: flex;
+  overflow-x: auto;
+  margin: 50px auto; 
 `;
 
 const ContainerCompleteCarousel = styled.div`
-  width: 1440;
-  margin: 50px auto;
+  width: 1272px;
   display: flex;
   justify-content: space-around;
 `;
@@ -34,16 +44,7 @@ const ContainerCarousel = styled.div`
   height: 577px;
   padding: 15px;
   border-radius: 5px;
-
-  @keyframes testeBg {
-    from { background-color: red; }
-    to { background-color: green; }
-  }
-
-  animation-name: testeBg,
-  animation-duration: 3s,
-
-  transition: 1s;
+  z-index: 0;
 `;
 
 const ContainerInfoProjects = styled.div`
@@ -109,36 +110,50 @@ const ButtonGitHub = styled.a`
   align-self: flex-end;
 `
 
-const LeftButton = styled.img`
+const LeftButton = styled.button`
   width: 68px;
   height: 101px;
   align-self: center;
   border-radius: 5px;
-  pointer-events: ${ props => props.disable ? props.disable : 'true' };
-  opacity: ${props => props.opacity ? props.opacity : 1 };
+  border-style: none;
 
-  :hover {
-    cursor: pointer;
-    border-radius: 50%;
+  :focus {
+    box-shadow: none;
+    outline: 0;
   }
 
-  transition: border-radius 0.5s;
+  img {
+    border-radius: 5px;
+  }
+
+  img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: border-radius 0.5s;
+  }
 `;
 
-const RightButton = styled.img`
+const RightButton = styled.button`
   width: 68px;
   height: 101px;
   align-self: center;
   border-radius: 5px;
-  pointer-events: ${ props => props.disable ? props.disable : 'true' };
-  opacity: ${props => props.opacity ? props.opacity : 1 };
+  border-style: none;
 
-  :hover {
-    cursor: pointer;
-    border-radius: 50%;
+  :focus {
+    box-shadow: none;
+    outline: 0;
+  }
+  
+  img {
+    border-radius: 5px;
   }
 
-  transition: border-radius 0.5s;
+  img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: border-radius 0.5s;
+  }
 `;
 
 
@@ -154,7 +169,9 @@ export {
   ButtonGitHub,
   ContainerCompleteCarousel,
   LeftButton,
-  RightButton
+  RightButton,
+  CardCarousel,
+  CardsAnButtonsCarousel
 }
 
 
