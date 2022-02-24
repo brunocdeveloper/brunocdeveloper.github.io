@@ -14,13 +14,16 @@ const CardCarousel = styled.div`
   width: 1272px;
   display: flex;
   overflow-x: auto;
-  margin: 50px auto; 
+  margin: 50px auto;
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const ContainerCompleteCarousel = styled.div`
-  width: 1272px;
-  display: flex;
-  justify-content: space-around;
+  width: 1440px;
 `;
 
 const TitleSectionProjects = styled.h1`
@@ -116,6 +119,8 @@ const LeftButton = styled.button`
   align-self: center;
   border-radius: 5px;
   border-style: none;
+  opacity: ${props => props.opacity ? props.opacity : '1' };
+  pointer-events: ${props => props.events ? props.events : '' };
 
   :focus {
     box-shadow: none;
@@ -139,6 +144,8 @@ const RightButton = styled.button`
   align-self: center;
   border-radius: 5px;
   border-style: none;
+  opacity: ${props => props.opacity ? props.opacity : '1' };
+  pointer-events: ${props => props.events ? props.events : '' };
 
   :focus {
     box-shadow: none;
