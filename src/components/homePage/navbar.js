@@ -19,7 +19,7 @@ function NavBar(props) {
   })();
 
   return (
-    <NavbarStyle bgcolor={ pathname !== "/" ?  bgcolorProjects :colorNavBar  }>
+    <NavbarStyle bgcolor={ pathname !== "/" ?  bgcolorProjects : colorNavBar  }>
       <LogoName onClick={ () => history("/") }>BC</LogoName>
       <div>
         <StyledLink to="/projetos">Projetos</StyledLink>

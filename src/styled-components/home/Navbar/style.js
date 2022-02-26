@@ -32,7 +32,7 @@ const LogoName = styled.span`
 `
 
 const StyledLink = styled(Link)`
-  font-family: 'Pragati Narrow';
+  font-family: 'Pragati Narrow', sans-serif;
   margin-right: 36px;
   font-style: normal;
   font-weight: bold;
@@ -50,8 +50,7 @@ const ButtonContato = styled.button`
   border-radius: 19px;
   text-decoration: none;
   border: none;
-
-  font-family: 'Pragati Narrow';
+  font-family: 'Pragati Narrow', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -64,7 +63,7 @@ const ButtonContato = styled.button`
     box-shadow: none;
     outline: 0;
   }
-`
+`;
 
 
 export {
