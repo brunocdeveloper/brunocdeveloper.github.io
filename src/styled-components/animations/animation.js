@@ -29,8 +29,50 @@ const Typing = keyframes`
   }
 `
 
+const BlindText = keyframes`
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+`;
+
+const animeLeft = keyframes`
+  0% {
+    transform: translate3d(-25px, 0, 0);
+    opacity: 0.1;
+  }
+`;
+
+const animeRight = keyframes`
+  0% {
+    transform: translate3d(25px, 0, 0);
+    opacity: 0.1;
+  }
+`;
+
+const animeMid = keyframes`
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+`
+
+const zoomScaleText = keyframes`
+  0% {
+    transform: scale(0.75);
+  }
+`;
+
+
 export {
   RemoveOpacity,
   Typing,
-  TranslateYAndOpacity
+  TranslateYAndOpacity,
+  BlindText,
+  animeLeft,
+  animeRight,
+  zoomScaleText,
+  animeMid
 }
