@@ -12,7 +12,7 @@ const NavbarStyle = styled.div`
   padding: 0 50px;
   z-index: 2;
 
-  transition: background-color 0.5s;
+  transition: background-color 0.3s;
 `;
 
 const LogoName = styled.span`

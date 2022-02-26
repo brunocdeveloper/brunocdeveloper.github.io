@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { animeLeft } from '../../animations/animation';
 
 const TitleSection = styled.p`
   font-family: 'Share', sans-serif;
@@ -27,9 +28,15 @@ const TechText = styled.div`
   letter-spacing: -0.005em;
   margin-right: 120px;
   color: #E5E5E6;
+  
+  animation: ${props => props.animate ? props.animate : 'none'} 0.6s 0s normal;
+  visibility: ${props => props.visibility ? props.visibility : 'hidden' };
+
 `;
 
 const TechImage = styled.img`
+  animation: ${props => props.animate ? props.animate : 'none'} 0.6s 0s normal;
+  visibility: ${props => props.visibility ? props.visibility : 'hidden' };
 `;
 
 export { 

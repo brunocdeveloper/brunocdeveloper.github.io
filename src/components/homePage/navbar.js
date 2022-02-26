@@ -8,23 +8,46 @@ function NavBar(props) {
   const history = useNavigate();
   const [colorNavBar, setColorNavBar] = useState("");
 
-  (() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 84) {
-        setColorNavBar("#312D45");
-      } else {
-        setColorNavBar("");
-      }
-    })
-  })();
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  window.addEventListener('scroll', debounce(() => {
+    if (window.scrollY > 53) {
+      setColorNavBar("#312D45");
+    } else {
+      setColorNavBar("");
+    }
+  }, 200))
+
+  function topPage() {
+    window.scroll(0,0);
+  };
 
   return (
     <NavbarStyle bgcolor={ pathname !== "/" ?  bgcolorProjects : colorNavBar  }>
-      <LogoName onClick={ () => history("/") }>BC</LogoName>
+      <LogoName onClick={ () => {
+        history("/");
+        topPage()
+      } }>BC</LogoName>
       <div>
-        <StyledLink to="/projetos">Projetos</StyledLink>
-        <StyledLink to="/sobre">Sobre Mim</StyledLink>
-        <ButtonContato onClick={ () => history("/contato") }>Contate</ButtonContato>
+        <StyledLink to="/projetos" onClick={ () => topPage() }>Projetos</StyledLink>
+        <StyledLink to="/sobre" onClick={ () => topPage() }>Sobre Mim</StyledLink>
+        <ButtonContato onClick={ () =>  {
+          history("/contato")
+          topPage()
+        } }>Contate</ButtonContato>
       </div>
     </NavbarStyle>
   )

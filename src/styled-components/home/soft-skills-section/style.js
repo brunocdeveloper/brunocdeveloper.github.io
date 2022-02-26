@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { zoomScaleText } from '../../animations/animation';
 
 const SoftSkillsTex = styled.p`
   font-family: 'Share', sans-serif;
@@ -11,6 +12,9 @@ const SoftSkillsTex = styled.p`
   letter-spacing: -0.005em;
   color: #E5E5E6;
   margin: 90px  61px;
+
+  animation: ${props => props.animate ? props.animate : 'none' } 0.6s 0s normal;
+  visibility: ${props => props.visibility ? props.visibility : 'hidden' };
 `;
 
 const ContainerCards = styled.div`
@@ -25,6 +29,9 @@ const CardSoftSkills = styled.div`
   height: 269px;
   margin-right: 75px;
   margin-top: 126px;
+
+  animation: ${props => props.animate ? props.animate : 'none' } 0.6s 0s normal;
+  visibility: ${props => props.visibility ? props.visibility : 'hidden' };
 `;
 
 const TitleCard = styled.p`

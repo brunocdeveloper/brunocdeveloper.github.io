@@ -36,6 +36,7 @@ const PresentationImage = styled.img`
 
 const StyleGreenWithText = styled.span`
   color: #00E493;
+  animation: ${props => props.animate ? props.animate : 'none' } 1.5s 0s infinite;
 `;
 
 export { 
