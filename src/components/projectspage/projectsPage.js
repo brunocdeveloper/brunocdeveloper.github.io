@@ -8,13 +8,13 @@ import Carousel from './carousel';
 function ProjectsPage() {
   return (
     <BodyPage height="1597px">
-      <GlobalStyle/> 
+      <GlobalStyle/>
       <NavBar bgcolor="#312D45"/>
       <ContainerProjects>
         <TitleSectionProjects weight="700" size="52px">Meus projetos</TitleSectionProjects>
         <Carousel />
       </ContainerProjects>
-      <AboutProject></AboutProject>
+      <AboutProject />
     </BodyPage>
   )
 }
