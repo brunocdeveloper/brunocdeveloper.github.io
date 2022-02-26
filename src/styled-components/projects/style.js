@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ContainerProjects = styled.div`
   width: 1440px;
-  height: 850px;
+  height: 930px;
 `;
 
 const CardsAnButtonsCarousel = styled.div`
@@ -14,7 +14,7 @@ const CardCarousel = styled.div`
   width: 1272px;
   display: flex;
   overflow-x: auto;
-  margin: 50px auto;
+  margin: 50px auto 15px;
   scroll-behavior: smooth;
 
   ::-webkit-scrollbar {
@@ -163,6 +163,31 @@ const RightButton = styled.button`
   }
 `;
 
+const ContainerAbout = styled.div`
+  width: 500px;
+  height: 353px;
+  margin-left: 89px;
+`;
+
+const SectionAboutText = styled.p`
+  font-weight: ${props => props.weight ? props.weight : 400};
+  font-family: 'Share', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 125.2%;
+  letter-spacing: -0.005em;
+  margin-bottom: 15px;
+  color: #FBFAFF;
+`
+const ListTechs = styled.ul`
+  font-family: 'Share', sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 125.2%;
+  letter-spacing: -0.005em;
+  margin-bottom: 5px;
+  color: #FBFAFF;
+`
 
 export { 
   ContainerProjects,
@@ -178,7 +203,8 @@ export {
   LeftButton,
   RightButton,
   CardCarousel,
-  CardsAnButtonsCarousel
-}
-
-
+  CardsAnButtonsCarousel,
+  ContainerAbout,
+  SectionAboutText,
+  ListTechs
+};
