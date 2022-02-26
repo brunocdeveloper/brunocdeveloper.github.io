@@ -2,6 +2,7 @@ import React from 'react';
 import { BodyPage, GlobalStyle } from '../../styled-components/home/body/style';
 import { ContainerProjects, TitleSectionProjects } from '../../styled-components/projects/style';
 import NavBar from '../homePage/navbar';
+import AboutProject from './aboutProjects';
 import Carousel from './carousel';
 
 function ProjectsPage() {
@@ -13,6 +14,7 @@ function ProjectsPage() {
         <TitleSectionProjects weight="700" size="52px">Meus projetos</TitleSectionProjects>
         <Carousel />
       </ContainerProjects>
+      <AboutProject></AboutProject>
     </BodyPage>
   )
 }
