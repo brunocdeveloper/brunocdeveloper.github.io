@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { RemoveOpacity, TranslateYAndOpacity } from '../animations/animation';
 
 const ContainerProjects = styled.div`
   width: 1440px;
   height: 930px;
+  animation: ${RemoveOpacity} 2.5s 0s normal;
 `;
 
 const CardsAnButtonsCarousel = styled.div`
@@ -38,6 +40,7 @@ const TitleSectionProjects = styled.h1`
   width: 604px;
   letter-spacing: -0.005em;
   color: #E5E5E6;
+  animation: ${TranslateYAndOpacity} 1.5s 0s normal;
 `;
 
 const ContainerCarousel = styled.div`

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Typing } from '../../animations/animation';
 
 const PresentationContainer = styled.div`
   display: flex;
@@ -23,6 +23,10 @@ const PresentationText = styled.p`
   letter-spacing: -0.005em;
   color: #FBFAFF;
   width: 580px;
+
+  animation: ${Typing} 1s steps(20) ${props => props.delay} normal both;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 const PresentationImage = styled.img`
@@ -32,8 +36,7 @@ const PresentationImage = styled.img`
 
 const StyleGreenWithText = styled.span`
   color: #00E493;
-`
-
+`;
 
 export { 
   PresentationContainer,
@@ -41,4 +44,4 @@ export {
   PresentationImage,
   PresentationText,
   StyleGreenWithText
-}
+};
