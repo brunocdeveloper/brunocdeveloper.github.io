@@ -13,14 +13,14 @@ function ContainerHomePage() {
     <>
      <NavBar/>
       <PresentationContainer>
-        {/* <ContainerText>
+        <ContainerText>
           <PresentationText delay="0s">Bem vindo!</PresentationText>
           <PresentationText weight="700" size="5.2rem" delay="1s">Eu sou Bruno Cândido</PresentationText>
           <PresentationText delay="2s">Desenvolvedor
             <StyleGreenWithText animate={BlindText}> Full-stack</StyleGreenWithText>
           </PresentationText>
           <PresentationText delay="3s"></PresentationText>
-        </ContainerText> */}
+        </ContainerText>
       </PresentationContainer>
     </>
   );

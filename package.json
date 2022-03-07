@@ -17,7 +17,7 @@
   "homepage": "https:brunocdeveloper.github.io/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b build brunocdeveloper-meu-portfolio -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
