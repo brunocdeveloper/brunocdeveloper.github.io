@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/brunocdeveloper.github.io/static/js/main.df16ab8d.js",
+    "main.js": "/brunocdeveloper.github.io/static/js/main.8af1e572.js",
     "static/js/787.e31b216d.chunk.js": "/brunocdeveloper.github.io/static/js/787.e31b216d.chunk.js",
     "static/media/bruno.png": "/brunocdeveloper.github.io/static/media/bruno.b9b4c199f3e9cb6ef9d0.png",
     "static/media/whatsapp.png": "/brunocdeveloper.github.io/static/media/whatsapp.1ee748db55d428ce9e9d.png",
@@ -15,10 +15,10 @@
     "static/media/github.png": "/brunocdeveloper.github.io/static/media/github.a4a133594e357d406c5f.png",
     "static/media/linkedin.png": "/brunocdeveloper.github.io/static/media/linkedin.9fee11a63795927ef743.png",
     "index.html": "/brunocdeveloper.github.io/index.html",
-    "main.df16ab8d.js.map": "/brunocdeveloper.github.io/static/js/main.df16ab8d.js.map",
+    "main.8af1e572.js.map": "/brunocdeveloper.github.io/static/js/main.8af1e572.js.map",
     "787.e31b216d.chunk.js.map": "/brunocdeveloper.github.io/static/js/787.e31b216d.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.df16ab8d.js"
+    "static/js/main.8af1e572.js"
   ]
 }
