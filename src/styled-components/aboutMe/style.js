@@ -38,7 +38,7 @@ const TextAbout = styled.p`
   width: 891px;
   font-family: 'Share', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: ${ props => props.weight ? props.weight : 'bold'};
   font-size: 36px;
   line-height: 125.2%;
   letter-spacing: -0.005em;

@@ -16,7 +16,7 @@ function AboutMe() {
         <ContainerAbout>
           <TitleAbout>Olá, visitante!</TitleAbout>
           <ContainerTextAndImage>
-          <TextAbout>Eu  me chamo Bruno e estou em transição de carreira para 
+          <TextAbout weight="400">Eu  me chamo Bruno e estou em transição de carreira para 
             o desenvolvimento web. Tenho pouco mais de um ano de 
             experiência como Dev em projetos acadêmicos e pessoais.
             Atualmente estou tentando me aprofundar nas stacks já 
