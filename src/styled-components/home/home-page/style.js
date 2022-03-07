@@ -9,10 +9,14 @@ const PresentationContainer = styled.div`
   height: 950px;
   width: 100%;
   max-width: 1440px;
-  background-image: url(${logo});
-  background-size: 1217px 1022px;
-  background-repeat: no-repeat;
-  background-position: right;
+
+  @media(max-width: 1440px) and (min-width: 320px) {
+    background-image: url(${logo});
+    background-size: 1217px 1022px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
 `;
 
 const ContainerText = styled.div`
@@ -20,17 +24,23 @@ const ContainerText = styled.div`
   margin-left: 50px;
   align-self: center;
   z-index: 1;
+
+  @media(max-width: 834px) {
+    align-self: flex-end;
+    margin-bottom: 160px;
+  }
 `;
 
 const PresentationText = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${props => props.weight ? props.weight : 'normal' };
-  font-size: ${props => props.size ? props.size : "40px" };
+  font-size: ${props => props.size ? props.size : "4.0rem" };
   line-height: 125.2%;
   color: #FBFAFF;
   width: 100%;
   max-width: 580px;
+  margin: 0;
 
   animation: ${Typing} 1s steps(20) ${props => props.delay} normal both;
   white-space: nowrap;

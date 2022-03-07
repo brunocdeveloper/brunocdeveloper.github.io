@@ -5,7 +5,7 @@ const TitleSection = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${props => props.weight ? props.weight : 'normal' };
-  font-size: ${props => props.size ? props.size : "40px" };
+  font-size: ${props => props.size ? props.size : "4.0rem" };
   margin-top: ${props => props.margin ? props.margin: 'none' };
   line-height: 125.2%;
   letter-spacing: -0.005em;
@@ -30,7 +30,7 @@ const TechText = styled.div`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 4.0rem;
   line-height: 125.2%;
   width: 604px;
   letter-spacing: -0.005em;

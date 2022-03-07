@@ -26,7 +26,7 @@ const TitleAbout = styled.h1`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 52px;
+  font-size: 5.2rem;
   line-height: 125.2%;
   margin-bottom: 49px;
   letter-spacing: -0.005em;
@@ -39,7 +39,7 @@ const TextAbout = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${ props => props.weight ? props.weight : 'bold'};
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 125.2%;
   letter-spacing: -0.005em;
   color: #FBFAFF;

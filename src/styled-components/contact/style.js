@@ -35,7 +35,7 @@ const TextLink = styled.span`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 30px;
   letter-spacing: 0.08em;
   text-decoration: none;

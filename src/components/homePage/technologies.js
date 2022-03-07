@@ -44,7 +44,7 @@ function Technologies() {
 
   return (
     <div>
-      <TitleSection weight="700" size="52px">Tecnologias</TitleSection>
+      <TitleSection weight="700" size="5.2rem">Tecnologias</TitleSection>
       <TechnologieSection>
         <TechText animate={animaLeft} visibility={visibility}>
           Aqui apresento algumas das tecnologias que venho desenvolvendo
