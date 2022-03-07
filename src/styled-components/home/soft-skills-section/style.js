@@ -5,7 +5,7 @@ const SoftSkillsTex = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 45px;
+  font-size: 4.5rem;
   line-height: 125.2%;
   text-align: center;
   letter-spacing: -0.005em;
@@ -14,6 +14,10 @@ const SoftSkillsTex = styled.p`
   padding: 0px 50px;
   animation: ${props => props.animate ? props.animate : 'none' } 0.6s 0s normal;
   visibility: ${props => props.visibility ? props.visibility : 'hidden' };
+`;
+
+const AgileMethodologiesTex = styled(SoftSkillsTex)`
+  height: 500px;
 `;
 
 const ContainerCards = styled.div`
@@ -47,7 +51,7 @@ const TitleCard = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 31.8547px;
+  font-size: 3.1rem;
   line-height: 125.2%;
   margin-bottom: 28px;
   text-align: center;
@@ -59,7 +63,7 @@ const TextCard = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 30.085px;
+  font-size: 3.0rem;
   line-height: 125.2%;
   text-align: center;
   letter-spacing: -0.005em;
@@ -73,4 +77,5 @@ export {
   CardSoftSkills,
   TitleCard,
   TextCard,
+  AgileMethodologiesTex,
 }

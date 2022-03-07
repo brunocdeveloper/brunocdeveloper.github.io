@@ -13,18 +13,39 @@ const NavbarStyle = styled.div`
   padding: 0 50px;
   z-index: 2;
   transition: background-color 0.2s;
+
+  @media(max-width: 425px) {
+    max-width: 425px;
+    width: 100%;
+    padding: 0;
+  }
+
+  @media(max-width: 375px) {
+    max-width: 375px;
+    width: 100%;
+    padding: 0;
+  }
+
+  @media(max-width: 320px) {
+    max-width: 320px;
+    width: 100%;
+  }
 `;
 
 const LogoName = styled.span`
   font-family: 'Saira Stencil One', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 76px;
 
   letter-spacing: 0.03em;
 
   color: #11DC94;
+
+  @media(max-width: 425px) {
+    display: none;
+  }
 
   :hover {
     cursor: pointer;
@@ -36,7 +57,7 @@ const StyledLink = styled(Link)`
   margin-right: 36px;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 30px;
 
   color: #FBFAFF;
@@ -53,7 +74,7 @@ const ButtonContato = styled.button`
   font-family: 'Pragati Narrow', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 30px;
 
   color: #FBFAFF;

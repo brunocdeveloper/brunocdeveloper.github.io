@@ -35,7 +35,7 @@ const TitleSectionProjects = styled.h1`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: ${props => props.weight ? props.weight : 'normal' };
-  font-size: ${props => props.size ? props.size : "40px" };
+  font-size: ${props => props.size ? props.size : "4.0rem" };
   line-height: 125.2%;
   width: 604px;
   letter-spacing: -0.005em;
@@ -71,7 +71,7 @@ const TitleProject = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 3.8rem;
   line-height: 125.2%;
 
   letter-spacing: -0.005em;
@@ -84,7 +84,7 @@ const TextAboutProject = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  font-size: 2.6rem;
   line-height: 125.2%;
 
   letter-spacing: -0.005em;
@@ -96,7 +96,7 @@ const TechsUsed = styled.p`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3.6rem;
   margin-top: 15px;
 
   letter-spacing: -0.005em;
@@ -108,7 +108,7 @@ const ButtonGitHub = styled.a`
   font-family: 'Share', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 125.2%;
   text-decoration: none;
   letter-spacing: -0.005em;
@@ -176,7 +176,7 @@ const SectionAboutText = styled.p`
   font-weight: ${props => props.weight ? props.weight : 400};
   font-family: 'Share', sans-serif;
   font-style: normal;
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 125.2%;
   letter-spacing: -0.005em;
   margin-bottom: 15px;
@@ -185,7 +185,7 @@ const SectionAboutText = styled.p`
 const ListTechs = styled.ul`
   font-family: 'Share', sans-serif;
   font-style: normal;
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 125.2%;
   letter-spacing: -0.005em;
   margin-bottom: 5px;
