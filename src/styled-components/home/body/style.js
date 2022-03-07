@@ -14,16 +14,14 @@ const GlobalStyle = createGlobalStyle`
   html {
     background-color: black;
   }
-
 `;
-
-
 
 const BodyPage = styled.div`
   background-color: #3F3B51;
-  height: ${props => props.height ? props.height : "3783px"};
+  height: ${props => props.height ? props.height : "100%"};
   margin: 0 auto;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 `
 export {
   BodyPage,

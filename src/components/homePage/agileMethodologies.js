@@ -35,7 +35,7 @@ function AgileMethods() {
 
   return ( 
     <div>
-      <TitleSection weight="700" size="52px">Metodologias Ágeis</TitleSection>
+      <TitleSection margin="116px" weight="700" size="52px">Metodologias Ágeis</TitleSection>
       <SoftSkillsTex animate={zoomAnimate} visibility={sofSkillsVisibility}>
         As metodologias ágeis, como o
         <StyleGreenWithText> scrum</StyleGreenWithText> e <StyleGreenWithText>Kanban</StyleGreenWithText>,

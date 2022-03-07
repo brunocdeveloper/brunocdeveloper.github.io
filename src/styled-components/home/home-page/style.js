@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 import { Typing } from '../../animations/animation';
+import logo from './logo.png';
 
 const PresentationContainer = styled.div`
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   height: 950px;
+  width: 100%;
+  max-width: 1440px;
+  background-image: url(${logo});
+  background-size: 1217px 1022px;
+  background-repeat: no-repeat;
+  background-position: right;
 `;
 
 const ContainerText = styled.div`
@@ -20,18 +28,13 @@ const PresentationText = styled.p`
   font-weight: ${props => props.weight ? props.weight : 'normal' };
   font-size: ${props => props.size ? props.size : "40px" };
   line-height: 125.2%;
-  letter-spacing: -0.005em;
   color: #FBFAFF;
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
 
   animation: ${Typing} 1s steps(20) ${props => props.delay} normal both;
   white-space: nowrap;
   overflow: hidden;
-`;
-
-const PresentationImage = styled.img`
-  margin-left: -457px;
-  z-index: 0;
 `;
 
 const StyleGreenWithText = styled.span`
@@ -42,7 +45,6 @@ const StyleGreenWithText = styled.span`
 export { 
   PresentationContainer,
   ContainerText,
-  PresentationImage,
   PresentationText,
   StyleGreenWithText
 };

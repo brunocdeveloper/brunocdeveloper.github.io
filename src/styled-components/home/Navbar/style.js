@@ -7,12 +7,12 @@ const NavbarStyle = styled.div`
   background-color: ${props => props.bgcolor ? props.bgcolor : '' };
   align-items: center;
   position: fixed;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 80px;
   padding: 0 50px;
   z-index: 2;
-
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 `;
 
 const LogoName = styled.span`

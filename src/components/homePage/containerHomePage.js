@@ -21,7 +21,6 @@ function ContainerHomePage() {
           </PresentationText>
           <PresentationText delay="3s"></PresentationText>
         </ContainerText>
-        <PresentationImage src={logo} alt='vector of a programmer'></PresentationImage>
       </PresentationContainer>
     </>
   );
