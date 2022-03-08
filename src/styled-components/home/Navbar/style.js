@@ -17,7 +17,7 @@ const NavbarStyle = styled.div`
   @media(max-width: 425px) {
     max-width: 425px;
     width: 100%;
-    padding: 0;
+    padding: 0 40px;
   }
 
   @media(max-width: 375px) {

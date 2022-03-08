@@ -10,24 +10,34 @@ const PresentationContainer = styled.div`
   width: 100%;
   max-width: 1440px;
 
-  @media(max-width: 1440px) and (min-width: 320px) {
-    background-image: url(${logo});
-    background-size: 1217px 1022px;
-    background-repeat: no-repeat;
-    background-position: right;
+  background-image: url(${logo});
+  background-size: 1217px 1022px;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  @media(max-width: 425px) {
+    background-size: 800px 900px;
+    height: 750px;
   }
 
+  @media(max-width: 375px) {
+    height: 670px;
+  }
 `;
 
 const ContainerText = styled.div`
   color: #FBFAFF;
-  margin-left: 50px;
+  padding: 0 25px;
   align-self: center;
   z-index: 1;
 
-  @media(max-width: 834px) {
+  @media(max-width: 1131px) {
     align-self: flex-end;
     margin-bottom: 160px;
+  }
+
+  @media(max-width: 425px) {
+    margin-bottom: 150px;
   }
 `;
 

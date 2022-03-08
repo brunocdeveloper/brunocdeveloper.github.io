@@ -15,6 +15,16 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     background-color: black;
     box-sizing: border-box;
+
+
+  @media(max-width: 671px) {
+    font-size: 40%;
+  }
+
+  @media(max-width: 375px) {
+    font-size: 30%;
+  }
+
   }
 
   body: {
@@ -27,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
 
 const BodyPage = styled.div`
   background-color: #3F3B51;
-  
+  margin: 0 auto;
   height: ${props => props.height ? props.height : "120%"};
   width: 100%;
   max-width: 1440px;
@@ -39,18 +49,15 @@ const BodyPage = styled.div`
   @media(max-width: 425px) {
     width: 100%;
     max-width: 425px;
-    height: 6800px;
+    height: 4400px;
   }
 
   @media(max-width: 375px) {
     width: 100%;
     max-width: 375px;
+    height: 3900px;
   }
 
-  @media(max-width: 320px) {
-    width: 100%;
-    max-width: 320px;
-  }
 `
 export {
   BodyPage,

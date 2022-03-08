@@ -24,6 +24,16 @@ const TechnologieSection = styled.section`
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @media(max-width: 425px) {
+    height: 700px;
+    padding: 50px 30px 60px 30px;
+  }
+
+  @media(max-width: 375px) {
+    height: 590px;
+    padding: 30px 30px 60px 30px;
+  }
 `;
 
 const TechText = styled.div`
